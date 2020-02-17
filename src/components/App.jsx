@@ -1,18 +1,19 @@
 import React from 'react';
 import Header from './Header';
 import Nav from './Nav'
-import {
-    BrowserRouter as Router,
-    Route
-  } from "react-router-dom";
+import { BrowserRouter as Router} from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Main from './Main';
 export default function App(){
     return(
-        <div className="wrap">
+        <div className="container">
             <Router>
-            <Header />
-            <Nav />
+                <Header />
+                <div className="row">
+                    <Nav />
+                    <Main />
+                </div>
             </Router>
-            
         </div>
         
     )

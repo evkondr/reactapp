@@ -6,13 +6,15 @@ export default class Nav extends React.Component{
     }
     render(){
         return(
-            <nav>
-                <ul>
-                    <li><NavLink to="/messages">Messages</NavLink></li>
-                    <li><NavLink to="/profile">Profile</NavLink></li>
-                    <li><NavLink to="/news">News</NavLink></li>
-                </ul>
-            </nav>
+            <div className="col-4">
+                <nav>
+                    <ul>
+                        <li><NavLink to="/messages">Messages</NavLink></li>
+                        <li><NavLink to="/profile">Profile</NavLink></li>
+                        <li><NavLink to="/news">News</NavLink></li>
+                    </ul>
+                </nav>
+            </div>
         )
     }
 }
