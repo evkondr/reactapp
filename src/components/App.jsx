@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import Nav from './Nav'
+import Sidebar from './sidebar/sidebar'
 import { BrowserRouter as Router} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Main from './Main';
@@ -12,8 +12,12 @@ export default function App(props){
             <Router>
                 <Header />
                 <div className="row">
-                    <Nav />
-                    <Main state={props.state}/>
+                    <div className="col-md-4">
+                        <Sidebar />
+                    </div>
+                    <div className="col-md-8">
+                        <Main state={props.state}/>
+                    </div>   
                 </div>
             </Router>
         </div>

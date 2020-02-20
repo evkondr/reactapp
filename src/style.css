@@ -7,6 +7,9 @@ a{
     color: inherit;
     text-decoration: none;
 }
+body{
+    /* background: url('/images/5709.jpg'); */
+}
 .wrap{
     max-width: 1170px;
     margin: 0 auto; 
@@ -16,9 +19,7 @@ header{
     border-bottom: 1px solid;
 }
 nav{
-
     margin-top: 10px;
-    border-right: 1px solid;
     min-height: 500px;
  }
  nav ul{
