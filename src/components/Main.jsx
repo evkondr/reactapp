@@ -5,21 +5,22 @@ import News from './News';
 import Messages from './Messages';
 
 export default class Main extends React.Component{
-
+    constructor(props){
+        super(props)
+    }
     render(){
+        debugger;
         return(
+            
             <div className="col-8">
                 <main>
                     <Switch>
-                        <Route path='/profile'>
-                            <Profile />
-                        </Route>
-                        <Route path='/messages'>
-                            <Messages />
-                        </Route>
-                        <Route path='/news'>
-                            <News />
-                        </Route>
+                        <Route path='/profile' component={Profile}/>
+                            
+                        <Route path='/messages' component={Messages}/>
+                            
+                        <Route path='/news' exact render={()=><News state={this.props.state}/>}/>
+                        
                     </Switch>
                 </main>
             </div>

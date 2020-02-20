@@ -5,14 +5,19 @@ export default class Newsitems extends React.Component{
         super(props)
     }
     render(){
+        debugger;
         return(
-            <div className="newsitem">
-                <h3 className="newsitem_header">
-                    {this.props.news.newsheader}
-                </h3>
-                <div className="newsitem_cintent">
-                    {this.props.news.newscontent}
-                </div>
+            <div>
+                this.props.news.map(item=>{(
+                    <div className="newsitem">
+                        <h3 className="newsitem_header">
+                            {item.header}
+                        </h3>
+                        <div className="newsitem_content">
+                            {item.content}
+                        </div>
+                    </div>
+                )}
             </div>
         )
     }
