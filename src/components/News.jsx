@@ -5,10 +5,14 @@ export default class News extends React.Component{
     constructor(props){
         super(props)
     }
+    
     render(){
         debugger;
         return(
+            
             <div>
+                <h2>News</h2>
+                
                 <Newsitems news={this.props.state.news}/>
             </div>
         )

@@ -7,7 +7,7 @@ export default class Sidebar extends React.Component{
 
     render(){
         return(
-            <aside>
+            <aside className="sidebar">
                 <Nav/>
             </aside>
         )
