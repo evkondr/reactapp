@@ -16,10 +16,6 @@ export default class Newsitems extends React.Component{
                             {item.content}
                         </div>
                     </div>))}
-                
-                {/* this.props.news.map(item=>{(
-                    
-                )} */}
             </div>
         )
     }

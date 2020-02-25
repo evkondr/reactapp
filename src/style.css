@@ -21,7 +21,6 @@ body{
 }
 header{
     text-align: center;
-    border-bottom: 1px solid;
     margin-bottom: 10px;
 }
 .sidebar .widjet,main{
@@ -30,15 +29,14 @@ header{
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
-.sidebar .widjet h2{
+.block-header{
     font-size: 1.5em;
     background-color: steelblue;
     color: whitesmoke;
     padding: 5px;
     text-align: center;
 }
-
- nav ul{
+nav ul{
     list-style-type: none;
     padding: 0 20px;
 }
@@ -54,18 +52,10 @@ nav li a:hover,nav li>a.active{
     font-weight: bold;
     text-decoration: none;
 }
-/*
-
-
-
-main{
-    float: right;
-    width: 80%;
+.news-block__form{
     padding: 10px 20px;
+
 }
-.conv{
-    display: block;
+.news-block__text{
+    width: 100%;
 }
-.conv .user_name,.conv .avatar{
-    display: inline-block;
-} */

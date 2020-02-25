@@ -7,7 +7,7 @@ export default class Nav extends React.Component{
     render(){
         return(
             <div className='widjet'>
-                <h2>Menu</h2>
+                <h2 className='block-header'>Menu</h2>
                 <nav>
                     <ul>
                         <li><NavLink to="/messages">Messages</NavLink></li>

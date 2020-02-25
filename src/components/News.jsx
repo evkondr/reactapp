@@ -7,12 +7,15 @@ export default class News extends React.Component{
     }
     
     render(){
-        debugger;
+        
         return(
             
-            <div>
-                <h2>News</h2>
-                
+            <div className='news-block'>
+                <h2 className='block-header'>News</h2>
+                <form action="" method='post' className='news-block__form'>
+                    <textarea name="news" id="" className='news-block__text'></textarea>
+                    <input type="submit" value="Add news"/>
+                </form>
                 <Newsitems news={this.props.state.news}/>
             </div>
         )
