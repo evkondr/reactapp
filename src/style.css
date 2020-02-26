@@ -52,10 +52,10 @@ nav li a:hover,nav li>a.active{
     font-weight: bold;
     text-decoration: none;
 }
-.news-block__form{
+.news-form{
     padding: 10px 20px;
 
 }
-.news-block__text{
+.news-form__text{
     width: 100%;
 }

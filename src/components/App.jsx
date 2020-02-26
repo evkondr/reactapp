@@ -16,7 +16,7 @@ export default function App(props){
                         <Sidebar />
                     </div>
                     <div className="col-md-9">
-                        <Main state={props.state}/>
+                        <Main state={props.state} addNews={props.addNews}/>
                     </div>   
                 </div>
             </Router>

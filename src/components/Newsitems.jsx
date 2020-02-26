@@ -5,7 +5,6 @@ export default class Newsitems extends React.Component{
         super(props)
     }
     render(){
-        debugger;
         return(
             <div>
                 {this.props.news.map(item=>(<div className="newsitem">
