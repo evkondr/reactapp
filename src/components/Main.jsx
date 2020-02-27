@@ -17,7 +17,7 @@ export default class Main extends React.Component{
                         
                     <Route path='/messages' component={Messages}/>
                         
-                    <Route path='/news' exact render={()=><News state={this.props.state} addNews={this.props.addNews}/>}/>
+                    <Route path='/news' exact render={()=><News state={this.props.state} addNews={this.props.addNews} getText={this.props.getText}/>}/>
                     
                 </Switch>
             </main>
